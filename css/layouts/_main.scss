@@ -1,0 +1,182 @@
+.main {
+	background: url('../img/main_bckg_movie_cover.jpg') no-repeat;
+	background-size: cover;
+	margin-top: -54px;
+	height: 100vh;
+	padding-top: 54px;
+	&:after {
+		background-color: black;
+  		opacity: 0.25;
+	}
+	.main_leftMenu {
+		@include span-columns(2);
+		background-color: rgba(#262626, 0.83);
+		height: 92vh;
+		overflow: auto;
+		text-align: center;
+		padding-top: 20px;
+		select {
+			margin: 0 auto 0.75em auto;
+			background-color: #101010;
+			color: white;
+			font-size: 0.9285rem;
+			border-color: #454545;
+			font-weight: 300;
+		}
+		.main_leftMenu_moviesList {
+			.main_leftMenu_moviesList_movie {
+				margin: 20px 0;
+				>a {
+					img {
+						max-width: 60%;
+						border: 2px solid transparent;
+						&:hover {
+							border: 2px solid $blue;
+						}
+					}
+				}
+				h4 {
+					color: #E3E1E1;
+					font-weight: 400;
+					font-size: 1rem;
+				    margin: 0 auto;
+    				max-width: 120px;
+				}
+				span {
+					color: #7B7B7B;
+					font-weight: 400;
+					font-size: 0.8571rem;
+				}
+			}
+		}
+		$mobile: new-breakpoint(max-width 900px);
+		@include media($mobile) {
+		    position: absolute;
+		    width: 134px;
+		}
+	}
+	.main_infoMovie {
+		@include span-columns(10);
+		max-height: 92vh;
+		overflow: auto;
+		text-align: center;
+		iframe {
+			display: block;
+			margin: 40px auto;
+			-webkit-box-shadow: -1px 12px 45px 5px rgba(0,0,0,0.51);
+			-moz-box-shadow: -1px 12px 45px 5px rgba(0,0,0,0.51);
+			box-shadow: -1px 12px 45px 5px rgba(0,0,0,0.51);
+			width: 54%;
+			min-width: 361px;
+			max-width: 569px;
+			$mobile: new-breakpoint(max-width 399px);
+			@include media($mobile) {
+			    min-width: 341px;
+			}
+		}
+		.main_infoMovie_description {
+			background-color: rgba(#101010, 0.76);
+			border-radius: 10px;
+			width: 95%;
+			display: inline-block;
+			padding: 1.4285em;
+			margin-bottom: 30px;
+			text-align: left !important;
+			>h2 {
+				color: $blue;
+				font-weight: 300;
+				font-size: 1.4285rem;
+				text-align: left !important;
+				display: inline-block;
+			}
+			.btn-favorites {
+				display: inline-block;
+				color: white;
+				font-size: 0.9285rem;
+				padding: 0.3571em 3.2142em;
+				background-image: url('../img/main_favorite_Star.png');
+				background-repeat: no-repeat;
+				background-size: 18px 18px;
+				background-position: 20px 7px; 
+				border-radius: 6px;
+				float: right;
+				$mobile: new-breakpoint(max-width 750px);
+				@include media($mobile) {
+				    margin: 0 0 10px 20px;
+				    float: none;
+				}
+			}
+			.btn-favoritesN {
+				background-color: #ED7F00;
+			}
+			.btn-favoritesB {
+				background-color: $blue;
+			}
+			p {
+				color: #AFAFAF;
+				font-weight: 300;
+				font-size: 1rem;
+				margin-bottom: 20px;
+			}
+			h3 {
+				color: $blue;
+				font-size: 1.1428rem;
+			}
+			.main_infomovie_similarMoviesList {
+				.similarMovie {
+					@include span-columns(2.8);
+					text-align: center;
+					height: 122px;
+					img {
+						margin: 10px 10px 20px;
+						display: inline-block;
+						vertical-align: middle;
+					    width: 30%;
+					}
+					.movie_info {
+						display: inline-block;
+						vertical-align: middle;
+						text-align: left !important;
+						h4 {
+							color: #DEDEDE;
+							font-size: 0.9285rem;
+							font-weight: 400;
+							margin-bottom: 0;
+							max-width: 60px;
+							$mobile: new-breakpoint(max-width 1000px);
+							@include media($mobile) {
+							    max-width: 85px;
+							}
+						}
+						span {
+							color: #7B7B7B;
+							font-size: 0.8571rem;
+							font-weight: 400;
+						}
+					}
+					$mobile: new-breakpoint(max-width 1000px);
+					@include media($mobile) {
+					    @include span-columns(5.5);
+					    min-height: 160px;
+					}
+					$mobile: new-breakpoint(max-width 580px);
+					@include media($mobile) {
+					    @include span-columns(12);
+					    min-height: 200px;
+					}
+				}
+			}
+		}
+		$mobile: new-breakpoint(max-width 900px);
+		@include media($mobile) {
+		    width: 100%;
+		}
+		$mobile: new-breakpoint(max-width 401px);
+		@include media($mobile) {
+		    padding: 0 10px;
+		}
+	}
+	.main_infoMovie-width {
+		width: 100% !important;
+	}
+}
