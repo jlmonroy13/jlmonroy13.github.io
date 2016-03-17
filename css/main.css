@@ -1200,9 +1200,15 @@ body .home-whatdo .se-content--quienes-somos {
   height: 597px;
   margin-top: -102px;
   position: relative; }
+  @media (max-width: 430px) {
+    .map {
+      height: 60vh; } }
   .map > div {
     position: absolute;
     width: 100% !important; }
+    @media (max-width: 430px) {
+      .map > div {
+        height: 100% !important; } }
 
 .contact-header {
   background-color: rgba(0, 0, 0, 0.3); }
