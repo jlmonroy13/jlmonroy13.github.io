@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Webpage Description -->
+	<title>UpTrade</title>
+	<meta name="description" content="UpTrade">
+	<meta name="author" content="Jorge Monroy - Selvio Pérez">
+	<meta name="keywords" content="" />
+	<!-- Styles -->	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<video loop autoplay width="100%" style="width:100%;">
+		<source type="video/mp4" src="video_480.mp4">
+	</video>
+	<section class="bg-logo">
+		<img src="img/icn/logo.png" alt="Logo">
+		<h1>Iniciar Sesión</h1>
+	</section>
+	<section class="form-login">
+		<div class="formulario">
+			<form id="myform-login" name="myform">
+				<label for="acceso-usuarios">Acceso Usuarios</label>
+				<select id="acceso-usuarios">
+					<option data-url="http://uprds.cl/users/sign_in">Cliente</option>
+					<option data-url="http://uprds.cl/auditor_users/sign_in">Auditor</option>
+					<option data-url="http://uprds.cl/admin/login">Admin</option>
+				</select>
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="User@email.com">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="Password"/>
+				<div class="checkbox">
+					<input type="checkbox"/>
+		        	<span>Remember me</span>
+		        </div>	
+				<a href="javascript:void(0)">Iniciar Sesión</a>
+			</form>
+			<hr>
+			<a class="forget" href="javascript:void(0)">¿Ha olvidado su contraseña?</a>
+			<div class="box-social">
+				<a class="social-networks" href="https://www.facebook.com/UP-TRADE-157463491126983/?ref=hl" target="_blank"><span class="contacto-fb"></span></a>
+				<a class="social-networks" href="https://plus.google.com/114968145958122185577" target="_blank"><span class="contacto-g"></span></a>
+				<a class="social-networks" href="https://www.linkedin.com/company/up-trade?trk=biz-companies-cym" target="_blank"><span class="contacto-in"></span></a>
+			</div>
+				
+		</div>
+	</section>
+	<!-- Javascript Files -->
+	<!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
+  	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

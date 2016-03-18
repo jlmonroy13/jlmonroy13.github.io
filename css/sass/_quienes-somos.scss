@@ -1,0 +1,110 @@
+.description {
+	text-align: center;
+	background: url("../img/bckg/quienes-somos_bckg.jpg");
+	background-size: cover;
+	padding: 9.2857rem 25px;
+	&__legend {
+		font-size: 1.5714rem; 
+		color: white;
+		max-width: 610px;
+		margin: 0.8214rem auto;
+		&--small {
+			font-size: 1.1428rem;
+		}
+	}
+}
+.team {
+	padding-bottom: 3em;
+	&__people {
+		margin-top: -99px;
+	}
+	&__person {
+		text-align: center;
+		margin: 0.8rem 0;
+		&--first-one {
+			margin-left: 12.5%;
+			@media(max-width: 969px) {
+				margin-left: 0;
+			}
+		}
+		&--first-two {
+			margin-left: 25%;
+			@media(max-width: 969px) {
+				margin-left: 0;
+			}
+		}
+		&__photo {
+			border: 2px solid #7EA09F;
+			border-radius: 50%;
+			width: 198px;
+			height: 198px;
+			margin-bottom: 12px;
+		}
+		&__name {
+			font-size: 1.1428rem;
+			color: #9BB325;
+			font-weight: 700;
+			margin: 0;
+		}
+		&__position {
+			font-size: 0.9285rem;
+			color: #7B9492;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+}
+.home-whatdo {
+	&--quienes-somos {
+		background-color: #F6F6F6;
+	}
+}
+
+body .home-whatdo .se-content--quienes-somos {
+	padding-top: 3.3rem !important;
+    padding-bottom: 4.3rem !important;
+}
+
+.how-do {
+	text-align: center;
+	padding: 2.9rem 0;
+	@media(max-width: 969px) {
+		padding: 2.9rem 15px;
+	}
+	&__title {
+		color: #333D3E;
+		font-size: 1.5714rem;
+		font-weight: 600;
+		margin: 0;
+		&:after {
+			content: "";
+			border-bottom: 2px solid #95D700;
+			width: 230px;
+			display: block;
+			margin: 1.2rem auto 0 auto;
+		}
+	}
+	&__legend {
+		color: #B1C54A;
+		font-size: 1.2857rem;
+		font-weight: 600;
+		margin: 3rem auto;
+		max-width: 480px;
+	}
+	&__description {
+		color: #768C8C;
+		font-size: 1rem;
+		text-align: left;
+		max-width: 390px;
+		font-weight: 600;
+		@media(max-width: 969px) {
+			margin: 10px auto;
+		}
+	}
+	&__first-description {
+		margin-left: 8.33%;
+		@media(max-width: 969px) {
+			margin: 10px auto;
+		}
+	}
+}

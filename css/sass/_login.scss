@@ -1,0 +1,141 @@
+video {
+
+}
+.bg-logo {
+	background: url('../img/bckg/login_bg.png') no-repeat;
+	background-size: cover;
+    height: 472px;
+    margin-top: -191px;
+    position: relative;
+    text-align: center;
+    padding: 140px 0;
+    @media(max-width: 480px) {
+	    height: 362px;
+    	margin-top: -41px;
+    	padding: 100px 0;
+	}
+    h1 {
+    	font-weight: 400;
+    	font-size: 1.8571rem;
+    	color: white;
+    }
+    img {
+	    width: 10%;
+    	right: 8px;
+    	position: relative;
+    	min-width: 120px;
+    }
+}
+.form-login {
+	padding: 30px 0 50px 0;
+	@media(max-width: 480px) {
+	    padding: 50px 25px;
+	}
+	.formulario {
+		display: block;
+		margin: 0 auto;
+	    max-width: 460px;
+		#myform-login {
+			text-align: center;
+			select {
+				position: relative;
+				background-color: #F7F7F7;
+				height: 35px;
+				border: 1px solid #777777;
+				width: 100%;
+				padding: 0 10px;
+				margin-bottom: 15px;
+				display: block;
+				color: #3F3F3F;
+				font-size: 1rem;
+				border-radius: 0px !important;
+			}
+			input {
+				position: relative;
+				background-color: #F7F7F7;
+				height: 35px;
+				border: 1px solid #777777;
+				width: 100%;
+				padding: 0 10px;
+				margin-bottom: 15px;
+				display: block;
+				color: #3F3F3F;
+				font-size: 1rem;
+			}
+			.checkbox {
+				vertical-align: middle;
+				text-align: left;
+				input[type='checkbox'] {
+					width: 10px;
+    				height: 12px;
+    				margin: 0;
+    				display: inline-block;
+				}
+				span {
+					line-height: 1;
+					color: #3F3F3F;
+					font-weight: 400;
+					font-size: 1rem;
+				}
+			}
+			label {
+				color: #3F3F3F;
+				font-weight: 600;
+				font-size: 1rem;
+				display: block;
+				text-align: left;
+			}
+			>a {
+				display: inline-block;
+				color: white;
+				background-color: $light-green;
+				font-weight: 600;
+				font-size: 1.1428rem;
+				margin: 20px auto 10px;
+			    padding: 10px 70px;
+			    border: 2px solid $light-green;
+			    &:hover {
+			    	background-color: white !important;
+					text-decoration: none;
+      				color: $light-green;
+      				border: 2px solid $light-green;
+			    }
+			}
+		}
+	}
+}
+a.forget {
+	display: block;
+	color: #007FFF;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 50px;
+}
+hr {
+	border-top: 2.5px solid #C5C5C5;
+    width: 92%;
+}
+.box-social {
+	text-align: center;
+	margin: 0 auto;
+	a.social-networks {
+		margin-top: 15px;
+		text-align: center;
+		span {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			margin-top: 15px;
+		}
+		.contacto-fb {
+			background: url('../img/icn/contacto_fb.png');	
+		}
+		.contacto-g {
+			background: url('../img/icn/contacto_g.png');	
+		}
+		.contacto-in {
+			background: url('../img/icn/contacto_in.png');	
+		}
+	}
+}
