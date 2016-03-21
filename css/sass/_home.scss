@@ -1,0 +1,487 @@
+/* home styles */
+hr {
+    border-top: 2.5px solid $light-green;
+    width: 161px;
+}
+.titles-mobile {
+	display: none;
+}
+.home-slider {
+	.video-container {
+		position: relative;
+		top: -102px;
+		.titles {
+			position: absolute;
+			top: 300px;
+			left: 80px;
+			@media(max-width: 706px) {
+				top: 230px;
+			}
+			@media(max-width: 406px) {
+				left: 10px;
+			}
+			h1 {
+				color: white;
+			}
+		}
+		.overlay-video {
+			position: absolute;
+			top: 0;
+			background-color: rgba(35,33,33,0.4);
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -295px !important;
+	@media(min-width: 1300px) {
+		height: 589px !important;
+	}
+	@media(max-width: 906px) {
+		margin-top: -205px !important;
+	}
+	@media(max-width: 706px) {
+		margin-top: -175px !important;
+	}
+	@media(max-width: 406px) {
+		margin-top: -245px !important;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 1.5714rem;
+	}
+	p {
+		font-weight: 400;
+		font-size: 1.1428rem;
+		max-width: 514px; 
+		color: white;
+		line-height: 1.7;
+	}
+	>a {
+		background-color: #343D3E;
+		font-size: 0.8571rem;
+		font-weight: 600;
+		&:hover {
+			background-color: #242B2C !important;
+			color: white !important;
+		}
+	}
+}
+.home-whatdo {
+	text-align: center;
+	padding-top: 50px;
+	.container {
+		h2 {
+			color: #333D3E;
+			font-weight: 600;
+		}
+		p {
+			color: #768E8D;
+			font-weight: 600;
+			font-size: 1.1428rem;
+			max-width: 620px;
+			line-height: 1.7;
+			margin: 16px auto;
+		}
+		h3 {
+			color: #333D3E;
+			font-weight: 600;
+			font-size: 1.2857rem;
+			margin-bottom: 70px;
+		}
+		.row {
+			>div {
+				h4 {
+					color: #333D3E;
+					font-weight: 600;
+					font-size: 1.1428rem;
+					max-width: 150px;
+					margin: 22px auto;
+				}
+				p {
+					color: #768E8D;
+					font-weight: 600;
+					font-size: 0.9285rem;
+					max-width: 210px;
+				}
+				img {
+					margin-bottom: 25px;
+				}
+				>a {
+					font-weight: 600;
+					font-size: 0.8571rem;
+					background-color: $light-green;
+					margin-bottom: 60px;
+					border: 2px solid $light-green;
+					&:hover {
+						background-color: white !important;
+						color: $light-green;
+						border: 2px solid $light-green;
+					}
+				}
+				&:nth-child(2) {
+					img {
+						margin-bottom: 55px;
+					}
+					p {
+						max-width: 190px;
+					}
+				}
+				&:last-child {
+					img {
+						margin-bottom: 43px;
+					}
+				}
+			}
+		}
+		
+	}
+}
+.home-ourTech {
+	background: url('../img/bckg/home_tecno_bg1.png') no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 860px;
+	padding-top: 280px;
+	position: relative;
+	@media(min-width: 1300px) {
+		height: 1070px;
+		padding-top: 480px;
+	}
+	.ourTech-slider {
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		h2 {
+			font-size: 1.5714rem;
+			font-weight: 600;
+		}
+		h3 {
+			font-weight: 400;
+			font-size: 1.2857rem;
+			color: white;
+		}
+		hr {
+			width: 121px !important;
+		}
+		p {
+			font-size: 1rem;
+			font-weight: 600;
+			color: white;
+			max-width: 373px;
+			margin: 14px auto;
+			line-height: 1.7;
+			@media(max-width: 565px) {
+			    max-width: 263px;
+			}
+		}
+		.btn {
+			font-weight: 600;
+			font-size: 0.8571rem;
+			background-color: $light-green;
+			&:hover {
+				background-color: #75AA00 !important;
+				color: white;
+			}
+		}
+	}
+	.ourTech-slider-visible {
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		h2 {
+			font-size: 1.5714rem;
+			font-weight: 600;
+		}
+		h3 {
+			font-weight: 400;
+			font-size: 1.2857rem;
+			color: white;
+		}
+		hr {
+			width: 121px !important;
+		}
+		p {
+			font-size: 1rem;
+			font-weight: 600;
+			color: white;
+			max-width: 373px;
+			margin: 14px auto;
+			line-height: 1.7;
+			@media(max-width: 565px) {
+			    max-width: 263px;
+			}
+		}
+		.btn {
+			font-weight: 600;
+			font-size: 0.8571rem;
+			background-color: $light-green;
+			&:hover {
+				background-color: #75AA00 !important;
+				color: white;
+			}
+		}
+	}
+	.slidebtn {
+		position: absolute;
+		top: 400px;
+		font-size: 1.5714rem;
+		@media(min-width: 1300px) {
+			top: 600px;
+		}
+		&:hover {
+			color: $light-green;
+			font-size: 1.7857rem;
+		}
+		&:active {
+			color: white;
+		}
+		&:focus {
+			color: white;
+		}
+	}
+	.slide-next {
+		right: 60px;
+		@media(max-width: 565px) {
+			right: 22px;
+		}
+	}
+	.slide-prev {
+		left: 60px;
+		@media(max-width: 565px) {
+			left: 22px;
+		}
+	}
+}
+.home-ourClients {
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 80px;
+	@media(max-width: 903px) {
+		padding-top: 60px;
+	}
+	@media(max-width: 470px) {
+		padding: 60px 40px;
+	}
+	h1 {
+		color: #333D3E;
+		font-weight: 400;
+		font-size: 1.5714rem;
+	}
+	hr {
+		width: 250px;
+	}
+	.clients-logos {
+		img {
+			display: inline-block;
+			width: 15%;
+			margin-right: 2%;
+			min-width: 145px;
+		}
+	}
+	.clients-sliderBtns {
+		margin-bottom: 50px;
+		a {
+			span {
+				width: 8px;
+				height: 8px;
+				display: inline-block;
+				border-radius: 50%;
+				background-color: black;
+				border: 1px solid black;
+			}
+			&:last-child {
+				span {
+					background-color: white;
+					border: 1px solid black;
+				}	
+			}
+		}
+	}
+	p {
+		color: #333D3E;
+		font-weight: 400;
+		font-size: 1.7142rem;
+		display: inline-block;
+	}
+	.btn {
+		font-weight: 600;
+		font-size: 1.2857rem;
+		background-color: $light-green;
+		margin-left: 15px;
+		border: 2px solid $light-green;
+		&:hover {
+			background-color: white !important;
+			color: $light-green;
+			border: 2px solid $light-green;
+		}
+	}
+}
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+.video-container {
+	display: none;
+}
+.home-header-mobile {
+	background: url('../img/bckg/home_bckg_final1.jpg') no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -125px !important;
+  } 
+	.titles-mobile {
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: 30px;
+		h1, h2 {
+			color: white;
+		}
+	} 
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+.video-container {
+	display: none;
+}
+.home-header-mobile {
+	background: url('../img/bckg/home_bckg_final1.jpg') no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -125px !important;
+  }  
+  .titles-mobile {
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: 30px;
+		h1, h2 {
+			color: white;
+		}
+	} 
+}
+
+/* The New iPad (iPad 3) ----------- */
+@media only screen
+and (min-device-width: 1536px)
+and (max-device-width: 2048px)
+and (-webkit-min-device-pixel-ratio: 2) {
+/* Styles */
+.video-container {
+	display: none;
+}
+.home-header-mobile {
+	background: url('../img/bckg/home_bckg_final1.jpg') no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -125px !important;
+  }  
+  .titles-mobile {
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: 30px;
+		h1, h2 {
+			color: white;
+		}
+	} 
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+.video-container {
+	display: none;
+}
+.home-header-mobile {
+	background: url('../img/bckg/home_bckg_final1.jpg') no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -125px !important;
+  }  
+  .titles-mobile {
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: 30px;
+		h1, h2 {
+			color: white;
+		}
+	} 
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (max-width: 450px),
+only screen and (min-device-pixel-ratio : 1.5) and (max-width: 450px) {
+/* Styles */
+.video-container {
+	display: none;
+}
+.home-header-mobile {
+	background: url('../img/bckg/home_bckg_final_movil1.jpg') no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.bar-home {
+	padding-top: 100px !important;
+	position: relative;
+    margin-top: -125px !important;
+  }  
+  .titles-mobile {
+		display: block;
+		position: absolute;
+		top: 150px;
+		left: 20px !important;
+		h1, h2 {
+			color: white;
+		}
+	} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
