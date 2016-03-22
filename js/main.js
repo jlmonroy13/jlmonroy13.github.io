@@ -254,21 +254,21 @@ $(function(){
     },
     {
       nombre: "Self Audit",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-self.jpg",
       href: "productos-self.html",
       select: true
     },
     {
       nombre: "Bussiness Intelligence",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-bsines.jpg",
       href: "productos-bussiness.html",
       select: true
     },
     {
       nombre: "B2B",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-b2b.jpg",
       href: "productos-b2b.html",
       select: true
