@@ -1,0 +1,161 @@
+// Our technology styes
+#our-technology {
+	.our-technology-main {
+		background:  url('../img/bckg/nuestra-tecnologia_bckg.jpg') no-repeat;
+		background-size: cover;
+		padding: 17.3571rem 0;
+		text-align: center;
+		@media(max-width: 824px) {
+		    background: url("../img/bckg/nuestra-tecnologia_bckg_movil.jpg");
+		    background-size: cover;
+		}
+		h2 {
+			font-weight: 600;
+			font-size: 1.7142rem;
+		}
+		h4 {
+			color: white;
+			font-size: 1.4285rem;
+			font-weight: 600;
+		}
+	}
+	.our-technology-audit {
+		padding: 35px 0;
+		.container {
+			text-align: center;
+			img {
+				display: inline-block;
+			}
+			h5 {
+				display: inline-block;
+				font-size: 1.1428rem;
+				color: #253247;
+				font-weight: 600;
+				vertical-align: middle;
+				margin-left: 20px;
+			}
+			>p {
+				color: #5F7A81;
+				font-size: 1.1428rem;
+				font-weight: 300;
+				max-width: 782px;
+				margin: 30px auto;
+				line-height: 1.7;
+				span {
+					font-weight: 700;
+				}
+			}
+			hr {
+				width: 89%;
+				border-top: 2.5px solid #ddd;
+			}
+			.row {
+				padding-left: 6%;
+				h4 {
+					color: #253246;
+					font-size: 1.1428rem;
+					font-weight: 600;
+					text-align: left;
+				}
+				p {
+					color: #5F7A81;
+					font-size: 1rem;
+					font-weight: 300;
+					text-align: left;
+					max-width: 283px;
+					line-height: 1.8;
+					@media(max-width: 754px) {
+						max-width: 600px;
+					}
+				}
+			}
+		}
+	}
+	.our-technology-rds {
+		// background:  url('../img/bckg/nuestra-tecnologia_RDSbckg.jpg') no-repeat;
+		background-size: cover;
+		padding: 17.3571rem 0;
+		text-align: center;
+		h2 {
+			font-weight: 600;
+			font-size: 1.7142rem;
+		}
+		h4 {
+			color: white;
+			font-size: 1.4285rem;
+			font-weight: 600;
+		}
+	}
+	.our-technology-productosRel {
+		padding: 35px 0;
+		@media(max-width: 776px) {
+			padding: 35px 25px;
+		}
+		.container {
+			.row {
+				&:first-child{
+					div {
+						img {
+							display: inline-block;
+							margin-right: 15px;
+							opacity: 0.9;
+							&:hover {
+								opacity: 1;
+							}
+						}
+						h5 {
+							display: inline-block;
+							vertical-align: middle;
+							font-size: 1.1428rem;
+							font-weight: 600;
+						}
+						p {
+							font-size: 1rem;
+							font-weight: 300;
+							color: #5F7A81;
+							line-height: 1.9;
+							max-width: 460px;
+							
+						}
+						&:last-child {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+			h4 {
+				font-weight: 400;
+				font-size: 1.1428rem;
+				color: #253248;
+			}
+			.row {
+				&:last-child {
+					div {
+						text-align: center;
+						img {
+							width: 100%;
+							opacity: 0.9;
+							&:hover {
+								opacity: 1;
+							}
+						}
+						p {
+							color: #263347;
+							font-weight: 600;
+							font-size: 0.9285rem;
+							line-height: 1;
+							margin-bottom: 0;
+							&:last-child {
+								color: #768C8C;
+								@media(max-width: 975px) {
+									margin-bottom: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	
