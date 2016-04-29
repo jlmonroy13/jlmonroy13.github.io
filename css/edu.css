@@ -1,0 +1,47 @@
+.navbar-inverse .navbar-nav > li > a{color:#3F3F3F}
+.navbar-inverse .navbar-nav > li > a:hover{color:#aaa}
+.nopad{padding-left:0;padding-right:0}
+.right-black-column{text-align:left}
+.left-black-column{text-align:center;margin-top:15px;margin-bottom:10px}
+.left-black-column h2{margin-top:0;font-size:35px}
+.testimonials{margin-top:0px}
+.testimonials .border{border:1px solid #aaa;padding:0 15px;border-radius:5px;height:3px;margin-bottom:25px;margin-top:25px}
+.testimonials p.duties{color:#989898}
+.black-row{background-color:#252525;padding-top:20px;padding-bottom:20px;font-size:14px;color:#FFF;padding-left:15px;padding-right:15px}
+.content-image{background-attachment:fixed;height:250px;background-size:auto auto;background-position:top left}
+.content-image-0{height:260px;background-size:150% auto;background-position:55% top}
+.footer1{height:0px}
+
+@media (min-width: 768px) {
+  .content-image{height:500px}
+  .content-image-0{height:700px;background-size:160% auto;background-position:center top}
+  .content-image-1{background-position:center 600px}
+  .content-image-2{background-position:75% 230px}
+  .content-image-3{background-position:center center}
+  .content-image-4{background-position:center 500px}
+  .content-image-5{background-position:75% 400px}
+  .testimonials{min-height:201px}
+  .testimonials .border{margin-top:0}
+  .black-row{padding-top:120px;padding-bottom:120px}
+  .black-row.testimonials-container{padding-top:60px;padding-bottom:60px}
+  .left-black-column{text-align:right}
+  .right-black-column{text-align:left}
+}
+
+@media (min-width: 992px) {
+  .content-image{height:650px}
+  .content-image-0{height:750px;background-size:120% auto;}
+  .content-image-1{background-position:center 770px}
+  .content-image-2{background-position:75% 430px}
+  .content-image-3{background-position:center 52%}
+  .content-image-4{background-position:center 140px}
+  .content-image-5{background-position:75% 100px}
+}
+@media (min-width: 1199px) {
+  .content-image{background-size: cover}
+  .right-black-column p{margin-top:15px}
+  /* .content-image-first{height:940px} */
+  .content-image-0{height:1000px;background-size:cover}
+  .content-image-1,.content-image-2,.content-image-3,.content-image-4,.content-image-5{background-size:cover;background-position:left top}
+}
+

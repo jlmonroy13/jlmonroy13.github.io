@@ -1,0 +1,511 @@
+html { font-family: 'Armata', Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; font-size: 14px; color: #424242;}
+.headroom {
+	position: relative;
+	z-index: 2;
+} 
+
+/*HERO SECTION*/
+.hero {
+	margin-top: -98px;
+	/*background: url('../images/main-image.jpg') no-repeat;*/
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	height: 100vh;
+}
+.hero__title {
+	margin: 0;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	color: white;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	font-family: "PT Sans";
+	font-weight: 500;
+	opacity: 0;
+	transition: 2s;
+}
+.main-title-js {
+	left: 50%;
+	opacity: 1;
+	font-size: 42px;
+}
+@media (max-width: 770px) {
+	.hero__title {
+		text-align: center;
+	}
+}
+
+
+/*DESCRIPTION SECTION*/
+.description {
+	text-align: center;
+	padding: 80px 0;
+}
+@media (max-width: 850px) {
+	.description {
+		padding: 80px 20px; 
+	}
+}
+.description__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.box-container {
+	display: inline-block;
+	max-width: 1000px;
+	position: relative;
+	text-align: left;
+	margin-bottom: 30px;
+}
+@media (max-width: 593px) {
+	.box-container {
+		text-align: center;
+		margin-bottom: 50px; 
+	}
+}
+.box-container__image {
+	display: inline-block;
+	width: 15%;
+	vertical-align: middle;
+	margin-right: 50px;
+	position: relative;
+	right: 80px;
+	opacity: 0;
+	transition: 2s;
+}
+.circle-img-js {
+	right: 0;
+	opacity: 1;
+}
+@media (max-width: 593px) {
+	.box-container__image {
+		margin-right: 0; 
+		width: 30%;
+	}
+}
+.box-container__description {
+	display: inline-block;
+	width: 75%;
+	vertical-align: middle;
+	position: relative;
+	left: 80px;
+	opacity: 0;
+	transition: 2s;
+}
+.box-container-js {
+	left: 0;
+	opacity: 1;
+}
+.box-container__title {
+	font-size: 22px;
+	font-family: "Avenir";
+	margin-bottom: 0;
+}
+.box-container__overview {
+	font-size: 16px;
+	font-family: "Avenir Next";
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+/*HISTORY SECTION*/
+.our-history {
+	background-color: #F3F3F3;
+	padding: 80px 0;
+	position: relative;
+}
+.black-square {
+	height: 416px;
+	width: 559px;
+	background-color: black;
+	position: relative;
+	left: -65px;
+}
+@media (max-width: 1199px) {
+	.black-square {
+		left: -130px;
+	}
+}
+@media (max-width: 890px) {
+	.black-square {
+		width: 80%;
+		min-width: 360px;
+		left: -80px;
+	}
+}
+.blue-square {
+	height: 85px;
+	width: 632px;
+	background-color: #51C4FF;
+	position: relative;
+	top: 246px;
+}
+@media (max-width: 890px) {
+	.blue-square {
+		width: 120%;
+	}
+}
+@media (max-width: 590px) {
+	.blue-square {
+		top: 276px;
+		width: 122%;
+	}
+}
+@media (max-width: 400px) {
+	.blue-square {
+		width: 115%;
+	}
+}
+.history {
+	background-color: #F3F3F3;
+}
+.video-history {
+	position: relative;
+	z-index: 3;
+	left: 55px;
+  top: 35px;
+  opacity: 0;
+  transition: 2s;
+}
+.video-history-js {
+	opacity: 1;
+	top: -35px;
+}
+@media (max-width: 890px) {
+	.video-history {
+		left: 100px;
+		width: 90%;
+		min-width: 350px;
+	}
+}
+@media (max-width: 590px) {
+	.video-history {
+		left: 50px;
+	}
+}
+@media (max-width: 400px) {
+	.video-history {
+		width: 60%;
+	}
+}
+.padding-left {
+	padding-left: 40px;
+}
+.history-content-js {
+	transition: 2s;
+	opacity: 0;
+	position: relative;
+	top: 80px;
+}
+.history-cont-effect-js {
+	opacity: 1;
+	top: 0;
+}
+.video-section {
+	margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+	.video-section {
+		margin-bottom: 0;
+	}
+}
+.our-history__title {
+	color: #51C4FF;
+	font-size: 22px;
+	font-family: "PT Sans";
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.our-history__title--margin {
+	margin-top: -85px;
+}
+.our-history__overview {
+	color: #333333;
+	font-size: 22px;
+	font-family: "Avenir";
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.our-history__overview--width {
+	max-width: 390px;
+}
+.our-history__overview--margin {
+	margin-top: 100px;
+}
+@media (max-width: 991px) {
+	.our-history__overview--margin {
+		margin-top: 30px;
+	}
+}
+.our-history__data {
+	color: #333333;
+	font-size: 16px;
+	font-family: "Avenir Next";
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.ipad-content-js {
+	position: relative;
+	right: 80px;
+	opacity: 0;
+	transition: 2s;
+}
+.ipad-cont-effect-js {
+	right: 0;
+	opacity: 1;
+}
+.ipad-js {
+	transform: rotatez(30deg);
+	opacity: 0;
+	transition: 2s;
+}
+.ipad-effect-js {
+	transform: rotatez(0deg);
+	opacity: 1;
+}
+/*TEAM SECTION*/
+.team {
+	padding: 200px 0 80px;
+	position: relative;
+}
+@media (max-width: 670px) {
+	.team {
+		padding: 100px 0 80px;
+	}
+}
+.black-square2 {
+	height: 416px;
+	width: 559px;
+	background-color: black;
+	position: relative;
+	left: -65px;
+}
+@media (max-width: 1199px) {
+	.black-square2 {
+		left: -80px;
+	}
+}
+@media (max-width: 781px) {
+	.black-square2 {
+		left: -20px;
+	}
+}
+@media (max-width: 670px) {
+	.black-square2 {
+		width: 70%;
+	}
+}
+@media (max-width: 400px) {
+	.black-square2 {
+		width: 90%;
+	}
+}
+.blue-square2 {
+	height: 181px;
+	width: 695px;
+	background-color: #49E3FF;
+	position: relative;
+	top: 145px;
+}
+@media (max-width: 1199px) {
+	.blue-square2 {
+		width: 115%;
+	}
+}
+@media (max-width: 670px) {
+	.blue-square2 {
+		height: 120px;
+	}
+}
+.image-team {
+	position: relative;
+	z-index: 3;
+	left: -10px;
+	opacity: 0;
+  top: -270px;
+  transition: 2s;
+}
+@media (max-width: 670px) {
+	.image-team {
+	  top: -100px;
+	  min-width: 300px;
+	}
+}
+@media (max-width: 550px) {
+	.image-team {
+	  top: -50px;
+	}
+}
+.team__info {
+	position: absolute;
+	bottom: 15px;
+	left: 65px;
+	transition: 2s;
+}
+.founder-js {
+	opacity: 0;
+	left: -10px;
+}
+.founder-effect-js {
+	opacity: 1;
+	left: 55px;
+}
+.team__person {
+	color: #FFF549;
+	font-size: 32px;
+	font-weight: 400;
+	font-family: 'Avenir';
+	margin-bottom: 0;
+	line-height: 1;
+}
+.team__roll {
+	color: #49E3FF;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Avenir';
+}
+.margin--top {
+	margin-top: 200px;
+}
+@media (max-width: 991px) {
+	.margin--top {
+		margin-top: 150px;
+	}
+}
+.right-container {
+	position: relative;
+	text-align: right;
+}
+.black-square3 {
+	display: inline-block;
+	height: 416px;
+	width: 559px;
+	background-color: black;
+	position: relative;
+	right: -35px;
+}
+@media (max-width: 1199px) {
+	.black-square3 {
+		right: -100px;
+		width: 90%;
+	}
+}
+@media (max-width: 991px) {
+	.black-square3 {
+		right: 0;
+	}
+}
+.blue-square3 {
+	height: 181px;
+	width: 125%;
+	background-color: #49E3FF;
+	position: relative;
+	top: 145px;
+	right: 125px;
+}
+@media (max-width: 1199px) {
+	.blue-square3 {
+		height: 181px;
+		width: 100%;
+	}
+}
+@media (max-width: 991px) {
+	.blue-square3 {
+		right: 0;
+		height: 120px;
+	}
+}
+.image-team2 {
+	position: relative;
+	z-index: 3;
+  	top: -270px;
+  	right: 60px;
+}
+@media (max-width: 991px) {
+	.image-team2 {
+	  top: -170px;
+	  width: 80%;
+	  min-width: 300px;
+	}
+}
+@media (max-width: 641px) {
+	.image-team2 {
+	  top: -70px;
+	}
+}
+@media (max-width: 400px) {
+	.image-team2 {
+	  right: 30px;
+	}
+}
+@media (max-width: 991px) {
+	.top--margin {
+		margin-top: 30px;
+	}
+	.bottom--margin {
+		margin-bottom: 120px;
+	}
+}
+@media (max-width: 641px) {
+	.bottom--margin {
+		margin-bottom: 60px;
+	}
+}
+.founder-info-js {
+	position: relative;
+	top: 30px;
+	opacity: 0;
+	transition: 2s;
+}
+.founder-info-effect-js {
+	top: 0;
+	opacity: 1;
+}
+.designer-info-js {
+	position: relative;
+	right: 100px;
+	opacity: 0;
+	transition: 2s;
+}
+.designer-info-effect-js {
+	right: 0;
+	opacity: 1;
+
+}
+.designer-js {
+	opacity: 0;
+	transition: 2s;
+}
+.designer-effect-js {
+	opacity: 1;
+}
+.color-white {
+	color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
